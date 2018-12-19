@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" styleClass="fundoJanelaAdiar" stylesheets="@../../CSS/scce.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.pimentel.scce.controller.ListarPacienteViewController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="273.0" layoutY="188.0" prefHeight="600.0" prefWidth="600.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Listar Paciente" textAlignment="CENTER" textFill="#4444ee">
+               <font>
+                  <Font name="Segoe UI Semibold Italic" size="36.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Separator prefWidth="200.0" />
+            <TableView fx:id="tableViewPaciente" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+              <columns>
+                <TableColumn fx:id="columnCodigo" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" text="Codigo" />
+                <TableColumn fx:id="columnCPF" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" text="CPF" />
+                  <TableColumn fx:id="columnNome" prefWidth="75.0" text="Nome" />
+              </columns>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <JFXButton fx:id="buttonSair" onMouseClicked="#clickedSair" prefWidth="100.0" stylesheets="@../../CSS/scce.css" text="Sair">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="20.0" />
+               </VBox.margin>
+               <styleClass>
+                  <String fx:value="botao-sair" />
+                  <String fx:value="botao-sair-effect" />
+               </styleClass>
+            </JFXButton>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

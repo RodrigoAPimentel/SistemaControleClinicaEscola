@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="370.0" prefWidth="700.0" styleClass="fundoJanelaAdiar" stylesheets="@../../CSS/scce.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.pimentel.scce.controller.AdiarAgendamentoViewController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <GridPane alignment="TOP_CENTER" hgap="10.0" vgap="20.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Codigo do Agendamento:" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS">
+                     <font>
+                        <Font name="Cambria Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text="Nome do Paciente:" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Cambria Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text="Area Medica:" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Cambria Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text="Data Marcada da Consulta:" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Cambria Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text="Remarca Consulta para a Data:" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="BOTTOM">
+                     <font>
+                        <Font name="Cambria Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelCodigoAgendamento" alignment="CENTER" contentDisplay="CENTER" prefWidth="330.0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS">
+                     <font>
+                        <Font name="Cambria Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelNomePaciente" alignment="CENTER" contentDisplay="CENTER" prefWidth="330.0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Cambria Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelAreaMedica" alignment="CENTER" contentDisplay="CENTER" prefWidth="330.0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Cambria Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelDataMarcada" alignment="CENTER" contentDisplay="CENTER" prefWidth="330.0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Cambria Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXDatePicker fx:id="datePickerRemarcar" defaultColor="#4059a9" editable="false" styleClass="combox" stylesheets="@../../CSS/scce.css" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="BOTTOM">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </JFXDatePicker>
+                  <Label text="Motivo da Remarcacão:" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.valignment="BOTTOM">
+                     <font>
+                        <Font name="Cambria Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="textFieldMotivoRemarcacao" alignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.valignment="BOTTOM">
+                     <font>
+                        <Font name="Cambria Italic" size="18.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="20.0" />
+               </VBox.margin>
+            </GridPane>
+            <Separator prefWidth="200.0">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="10.0" right="10.0" />
+               </VBox.margin>
+            </Separator>
+            <HBox alignment="CENTER" spacing="180.0">
+               <children>
+                  <JFXButton fx:id="buttonAdiar" onMouseClicked="#clickedButtonConfirmar" prefWidth="150.0" stylesheets="@../../CSS/scce.css" text="Adiar Consulta">
+                     <styleClass>
+                        <String fx:value="botao-confirmar" />
+                        <String fx:value="botao-confirmar-effect" />
+                     </styleClass>
+                  </JFXButton>
+                  <JFXButton fx:id="buttonSair" onMouseClicked="#clickedButtonSair" prefWidth="100.0" stylesheets="@../../CSS/scce.css" text="Sair">
+                     <styleClass>
+                        <String fx:value="botao-cancelar" />
+                        <String fx:value="botao-cancelar-effect" />
+                     </styleClass>
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

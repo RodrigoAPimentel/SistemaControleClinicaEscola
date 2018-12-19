@@ -1,0 +1,56 @@
+.myDialogWarning{
+    -fx-background-color: #f9d900;
+}
+
+.myDialogWarning > *.label.content{
+    -fx-font-size: 14px;
+    -fx-font-style: italic;
+    -fx-fill: #292929;
+}
+.myDialogWarning:header *.header-panel{
+    -fx-background-color: #f9d900;
+}
+
+.myDialogWarning:header *.header-panel *.label{
+    -fx-font-size: 18px;
+    -fx-font-style: italic;
+    -fx-font-weight: bold;
+}
+
+.myDialogConfirmation{
+    -fx-background-color: #94ff94;
+}
+
+.myDialogConfirmation > *.label.content{
+    -fx-font-size: 14px;
+    -fx-font-style: italic;
+    -fx-fill: #292929;
+}
+.myDialogConfirmation:header *.header-panel{
+    -fx-background-color: #94ff94;
+}
+
+.myDialogConfirmation:header *.header-panel *.label{
+    -fx-font-size: 18px;
+    -fx-font-style: italic;
+    -fx-font-weight: bold;
+}
+
+.myDialogError{
+    -fx-background-color: red;
+}
+
+.myDialogError > *.label.content{
+    -fx-font-size: 14px;
+    -fx-font-style: italic;
+    -fx-fill: #292929;
+}
+.myDialogError:header *.header-panel{
+    -fx-background-color: red;
+}
+
+.myDialogError:header *.header-panel *.label{
+    -fx-font-size: 18px;
+    -fx-font-style: italic;
+    -fx-font-weight: bold;
+}

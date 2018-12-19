@@ -1,0 +1,157 @@
+.highlightedRow {
+    -fx-background-color: #2ac22a;
+    -fx-background-insets: 0, 1, 2;
+    -fx-background: -fx-accent;
+    -fx-text-fill: -fx-selection-bar-text;
+}
+
+.fundoJanelaCancelar{
+	-fx-background-color: #ffcccc ;
+}
+
+.fundoJanelaCadastrarConfirmar{
+	-fx-background-color: #ccffcc ;
+}
+
+.fundoJanelaAdiar{
+	-fx-background-color: #ffffcc ;
+}
+
+.botao-confirmar {
+	-fx-border-color: green   ;
+	-fx-padding: 5;
+	-fx-border-insets: 0;
+	-fx-border-width: 2;
+	-fx-border-radius: 5;
+	-fx-border-style: solid;
+	
+	-fx-font-family: "Times New Roman";
+	-fx-font-style: italic;
+	-fx-font-weight: bold;
+	-fx-font-size: 14;
+	-fx-alignment: center;	
+	
+	-fx-cursor: hand ;
+}
+
+.botao-confirmar-effect:hover{
+	-fx-background-color: green  ;
+	-fx-text-fill: white ;
+	-fx-background-radius: 5 5 5 5;
+}
+
+.botao-cancelar {
+	-fx-border-color: red    ;
+	-fx-padding: 5;
+	-fx-border-insets: 0;
+	-fx-border-width: 2;
+	-fx-border-radius: 5;
+	-fx-border-style: solid;
+	
+	-fx-font-family: "Times New Roman";
+	-fx-font-style: italic;
+	-fx-font-weight: bold;
+	-fx-font-size: 14;
+	-fx-alignment: center;
+	
+	-fx-cursor: hand ;
+}
+
+.botao-cancelar-effect:hover{
+	-fx-background-color: red ;
+	-fx-text-fill: white ;
+	-fx-background-radius: 5 5 5 5;
+}
+
+.botao-sair {
+	-fx-border-color: orange    ;
+	-fx-padding: 5;
+	-fx-border-insets: 0;
+	-fx-border-width: 2;
+	-fx-border-radius: 5;
+	-fx-border-style: solid;
+	
+	-fx-font-family: "Times New Roman";
+	-fx-font-style: italic;
+	-fx-font-weight: bold;
+	-fx-font-size: 14;
+	-fx-alignment: center;
+	
+	-fx-cursor: hand ;
+}
+
+.botao-sair-effect:hover{
+	-fx-background-color: orange ;
+	-fx-text-fill: white ;
+	-fx-background-radius: 5 5 5 5;
+}
+
+.combox {
+	-fx-font-family: "Cambria";
+	-fx-font-style: italic;
+	-fx-font-size: 18;
+	-fx-alignment: center;
+}
+
+.titledPaneItem:hover {
+   -fx-scale-x: 1.1;
+   -fx-effect: dropshadow(three-pass-box, rgba(255, 155, 0, 1), 5, 0.0, 0, 0);	
+	
+	-fx-cursor: hand ;
+}
+
+.botao-adiar {
+	-fx-border-color: orange    ;
+	-fx-padding: 5;
+	-fx-border-insets: 0;
+	-fx-border-width: 2;
+	-fx-border-radius: 5;
+	-fx-border-style: solid;
+	
+	-fx-font-family: "Times New Roman";
+	-fx-font-style: italic;
+	-fx-font-weight: bold;
+	-fx-font-size: 14;
+	-fx-alignment: center;
+	
+	-fx-cursor: hand ;
+}
+
+.botao-adiar-effect:hover{
+	-fx-background-color: orange ;
+	-fx-text-fill: white ;
+	-fx-background-radius: 5 5 5 5;
+}
+
+
+.botao-atendimento {
+	-fx-border-color: blue    ;
+	-fx-padding: 5;
+	-fx-border-insets: 0;
+	-fx-border-width: 2;
+	-fx-border-radius: 5;
+	-fx-border-style: solid;
+	
+	-fx-font-family: "Times New Roman";
+	-fx-font-style: italic;
+	-fx-font-weight: bold;
+	-fx-font-size: 14;
+	-fx-alignment: center;
+	
+	-fx-cursor: hand ;
+}
+
+.botao-atendimento-effect:hover{
+	-fx-background-color: blue ;
+	-fx-text-fill: white ;
+	-fx-background-radius: 5 5 5 5;
+}
+
+.codigo {
+	-fx-border-color: black    ;
+	-fx-padding: 5;
+	-fx-border-insets: 0;
+	-fx-border-width: 2;
+	-fx-border-radius: 5;
+	-fx-border-style: solid;
+}
